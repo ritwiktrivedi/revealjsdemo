@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Prepared by: 22f1000120@ds.study.iitm.ac.in</p>
+          <aside class="notes">
+            Greet stakeholders, introduce yourself, and mention the agenda.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Financial Highlights Q2
+
+            - Revenue Growth: **15%**
+            - Operating Margin: **12%**
+            - Net Profit: **$8.3M**
+
+            ---
+            
+            ## Outlook
+            - Expansion into new markets
+            - Investment in AI-driven analytics
+          </textarea>
+          <aside class="notes">
+            Highlight positive growth and explain forward-looking strategies.
+          </aside>
+        </section>
+
+        <!-- Animated Fragments -->
+        <section>
+          <h2>Key Drivers of Growth</h2>
+          <ul>
+            <li class="fragment">Increased Digital Transactions</li>
+            <li class="fragment">Higher Loan Disbursement</li>
+            <li class="fragment fade-up">Strong Customer Acquisition</li>
+          </ul>
+          <aside class="notes">
+            Reveal points one by one for emphasis.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h2>Sample Data Query</h2>
+          <pre><code class="sql" data-trim data-line-numbers="1-2|4-5">
+-- Retrieve quarterly revenue breakdown
+SELECT quarter, SUM(revenue) as total_revenue
+FROM earnings
+WHERE year = 2025
+GROUP BY quarter;
+          </code></pre>
+          <aside class="notes">
+            Explain how the financial data is aggregated directly from internal systems.
+          </aside>
+        </section>
+
+        <!-- Math Formula -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>
+            Return on Equity (ROE):
+          </p>
+          <p>
+            \[
+            ROE = \frac{Net\ Income}{Shareholder\ Equity}
+            \]
+          </p>
+          <aside class="notes">
+            Use this formula to explain profitability relative to shareholder investment.
+          </aside>
+        </section>
+
+        <!-- Closing Slide -->
+        <section>
+          <h2>Thank You</h2>
+          <p>Questions? Contact: <b>sample@email.com</b></p>
+          <aside class="notes">
+            Invite questions and provide contact information for follow-up.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+    <script>
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: "slide",
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
